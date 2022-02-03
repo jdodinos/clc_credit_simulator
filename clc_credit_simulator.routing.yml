@@ -1,0 +1,15 @@
+clc_credit_simulator.clc_load_mass_form:
+  path: '/admin/config/credit-simulator'
+  defaults:
+    _form: '\Drupal\clc_credit_simulator\Form\ConfigCreditSimulatorForm'
+    _title: 'Configuración de simulador de creditos'
+  requirements:
+    _permission: 'Config credit simulator'
+
+clc_credit_simulator.clc_report:
+  path: '/admin/config/report-credit-simulator'
+  defaults:
+    _form: '\Drupal\clc_credit_simulator\Form\ReportCreditSimulatorForm'
+    _title: 'Report Credit simulator'
+  requirements:
+    _permission: 'Config Habeas Data'

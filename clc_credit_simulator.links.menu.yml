@@ -1,0 +1,13 @@
+colcomercio.config:
+  title: 'Colcomercio'
+  description: 'Configuración de simulador de créditos'
+  parent: system.admin
+  route_name: clc_credit_simulator.clc_load_mass_form
+  weight: 100
+
+clc_credit_simulator.config:
+  title: 'Conf. Simulador de creditos'
+  description: 'Configuración de simulador de créditos'
+  parent: colcomercio.config
+  route_name: clc_credit_simulator.clc_load_mass_form
+  weight: 0

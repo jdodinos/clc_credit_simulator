@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * @file
+ * Create database to credit simulator.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function clc_credit_simulator_schema() {
+  $schema['clc_credit_simulator_submittions'] = [
+    'description' => 'Submittions of credit simulator form',
+    'fields' => [
+      'id' => [
+        'description' => 'Serial register',
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'product_name' => [
+        'description' => 'Product name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'total_fee' => [
+        'description' => 'Total fee',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'amount' => [
+        'description' => 'amount',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_document' => [
+        'description' => 'Customer document',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_name' => [
+        'description' => 'Customer name',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_lastname' => [
+        'description' => 'Customer lastname',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_email' => [
+        'description' => 'Customer email',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_phone' => [
+        'description' => 'Customer phone',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'customer_city' => [
+        'description' => 'Customer city',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'comment' => [
+        'description' => 'Comment',
+        'type'        => 'text',
+        'not null'    => TRUE,
+      ],
+      'terms_and_conditions' => [
+        'description' => 'Authorize terms and conditions',
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'created' => [
+        'description' => 'Fecha de creacion del registro',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

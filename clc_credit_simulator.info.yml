@@ -1,0 +1,5 @@
+name: Credit similutor
+type: module
+description: Simulador de creditos
+core: 8.x
+package: 'Custom'

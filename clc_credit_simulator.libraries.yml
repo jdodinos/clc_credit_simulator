@@ -1,0 +1,11 @@
+config:
+  js:
+    libraries/clc_credit_simulator_config.js: {}
+  dependencies:
+    - core/jquery
+
+simulator:
+  js:
+    libraries/clc_credit_simulator.js: {}
+  dependencies:
+    - core/jquery
